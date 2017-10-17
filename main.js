@@ -12,6 +12,7 @@ jQuery(function($) {
           if (data.errors) {
               alert("Erro salvando cartão: " + JSON.stringify(data.errors));
           } else {
+              console.log(data.id);
               $("#token").val( data.id );
               form.get(0).submit();
           }
